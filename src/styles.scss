@@ -1,1 +1,281 @@
-/* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css2?family=Jost:wght@100;600&display=swap');
+
+* {
+  font-family: 'Jost', sans-serif;
+  margin: 0;
+  padding: 0;
+  font-weight: 600;
+  color: #0E0C20;
+}
+
+.header__logo {
+  font-size: 36px;
+  color: #7338F6;
+  /* text-shadow: #000000 1px 1px, #000000 0px 5px 5px, #000000 -1px -1px, #000000 1px -1px */
+  /* -webkit-text-stroke: 2px #000000; */
+  /* border: 1px solid #000000; */
+  /* text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); */
+  /* text-shadow: 0 0 1px #000000,0 0 1px #000000,0 0 1px #000000,0 0 1px #000000,0 0 1px #000000,0 0 1px #000000,0 0 1px #000000,0 0 1px #000000;
+ text-shadow: 0 1px 1px #000000, 1px 0 1px #000000,0 -1px 1px #000000, -1px 0 1px #000000,1px 1px 1px #000000,0 0 1px #000000,-1px -1px 0px #000000,0 0 1px #000000; */
+  /* text-shadow: #000000 1px 1px,#000000 1px 0px ,#000000 0px 1px,#000000 0px -1px,#000000 -1px -1px,#000000 -1px 0px ,#000000 1px -1px,#000000 -1px 1px */
+  color: linear-gradient(180deg, #7C45F8 0%, #746FFA 79.33%, #6D90FB 100%);
+}
+
+.header__button {
+  cursor: pointer;
+  width: 170px;
+  height: 56px;
+  font-size: 12px;
+  border-radius: 8px;
+  color: #7338F6;
+  background-color: #FFFFFF;
+  background-origin: border-box;
+  background-clip: content-box, border-box;
+  background-image: linear-gradient(360deg, #55AEEF -3.14%, #7C46F8 99.49%),
+    linear-gradient(180deg, #7C45F8 0%, #746FFA 30.33%, #6D90FB 100%);
+  border: solid 1.5px transparent;
+  /* -webkit-background-clip: text;
+-webkit-text-fill-color: transparent; */
+  box-shadow: 2px 1000px 1px #fff inset;
+}
+
+span {
+  /* background: linear-gradient(285deg, #55AEEF -3.14%, #7C46F8 99.49%);
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent; */
+}
+
+span:hover {
+  /* background: white; */
+}
+
+
+
+.header__button:hover {
+  box-shadow: none;
+  color: white;
+}
+
+
+.header__container {
+  height: 72px;
+  font-family: 'Jost', sans-serif;
+
+}
+
+/*
+375 - 16
+1440 - 80
+2732 - 300
+ */
+
+[class*="__container"] {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 2138px;
+  margin: 0 auto;
+  overflow-y: hidden;
+}
+
+/* .main__container{
+	display: flex;
+	justify-content: space-between;
+} */
+
+.main__block {
+  height: 605px;
+  width: 946px;
+  font-size: 80px;
+  line-height: 80px;
+  margin-left: 1em;
+  margin-top: -1em;
+}
+
+.form__block {
+  font-size: 24px;
+  width: 420px;
+  line-height: 24px;
+}
+
+
+.circle__wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  // height: 100vh;
+  min-width: 900px;
+  margin-left: 80px;
+}
+
+.circle {
+  display: flex;
+  border-radius: 50%;
+  align-self: flex-end;
+}
+
+.one {
+  background-color: #78D4FC;
+  margin: 0px -9px 51px 110px;
+  width: 208px;
+  height: 208px;
+}
+
+.two {
+  background-color: #7338F6;
+  margin: 0px 0px 1px 0px;
+  width: 541px;
+  height: 541px;
+}
+
+.three {
+  background-color: #78D4FC;
+  margin: -48px 0px 1px 0px;
+  width: 613px;
+  height: 613px;
+}
+
+.four {
+  background-color: #7338F6;
+  margin: -4px 0px 0px -4px;
+  width: 196px;
+  height: 196px;
+  align-self: flex-start;
+}
+
+@media (max-width:2298px) {
+  [class*="container"] {
+    margin: 0 80px;
+    /* background: rgb(151, 163, 82); */
+  }
+}
+
+@media (max-width:1536px) {
+  [class*="container"] {
+    margin: 0 auto;
+    max-width: 1360px;
+    /* background: rgb(182, 226, 121); */
+  }
+
+  .main__block {
+    height: 168px;
+    width: 560px;
+    font-size: 48px;
+    line-height: 48px;
+  }
+
+  .form__block {
+    font-size: 14px;
+    width: 320px;
+  }
+
+  .circle__wrapper {
+    margin: 0;
+    /* background-color: bisque; */
+    height: 699px;
+    min-width: 602px;
+  }
+
+  .one {
+    margin: 0px 0px 1px 0px;
+    height: 208px;
+    width: 208px;
+  }
+
+  .two {
+    margin: 0px 0px 1px 0px;
+    height: 350px;
+    width: 350px;
+  }
+
+  .three {
+    margin: 0px 0px 1px 0px;
+    height: 400px;
+    width: 400px;
+  }
+
+  .four {
+    margin: 0px 0px 1px 0px;
+    width: 196px;
+    height: 196px;
+  }
+}
+
+@media (max-width:1408px) {
+  [class*="container"] {
+    margin: 0 24px;
+    /* background: rgb(238, 155, 210); */
+  }
+}
+
+@media (max-width:1230px) {
+  .circle__wrapper {
+    height: 354px;
+    min-width: 304px;
+    max-width: 304px;
+  }
+
+  .one {
+    height: 104px;
+    width: 104px;
+  }
+
+  .two {
+    height: 170px;
+    width: 170px;
+  }
+
+  .three {
+    height: 200px;
+    width: 200px;
+  }
+
+  .four {
+    width: 88px;
+    height: 88px;
+  }
+
+  .main__block {
+    height: 384px;
+    width: 560px;
+    font-size: 36px;
+    line-height: 36px;
+  }
+}
+
+@media (max-width:423px) {
+  [class*="container"] {
+    margin: 0 auto;
+    max-width: 375px;
+    /* background: rgb(24, 165, 47); */
+  }
+
+  .main__block {
+    height: 376px;
+    width: 327px;
+    font-size: 36px;
+    line-height: 36px;
+  }
+
+}
+
+@media (max-width:407px) {
+  [class*="container"] {
+    margin: 0 16px;
+    /* background: rgb(163, 165, 24); */
+  }
+
+  .circle__wrapper {
+    display: none;
+    /* background: rgb(165, 40, 24); */
+  }
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+}

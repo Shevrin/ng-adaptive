@@ -1,0 +1,35 @@
+<form action="" class="form">
+  <mat-form-field appearance="standard">
+    <mat-label>Email</mat-label>
+    <input
+      type="email"
+      matInput
+      placeholder="example@viewgin.com"
+      [formControl]="email"
+      required
+    />
+  </mat-form-field>
+  <mat-error *ngIf="email.invalid">{{ getErrorMessage() }}</mat-error>
+  <div class="check"></div>
+  <label class="check-label">
+    <input
+      type="checkbox"
+      class="checkbox-input"
+      (change)="disabled = !disabled"
+    />
+    <span class="checkbox"></span>
+    I agree with
+  </label>
+  <span class="check-policy" (click)="openDialog()">Privacy Policy</span>
+  <!-- <mat-checkbox
+    class="checkbox"
+    [(indeterminate)]="indeterminate"
+    [labelPosition]="labelPosition"
+    [disabled]="disabled"
+  >
+    I'm a checkbox
+  </mat-checkbox> -->
+
+  <button class="btn-form" [disabled]="disabled">ENTER</button>
+  <button type="">uuuuuuu</button>
+</form>
