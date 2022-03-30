@@ -8,7 +8,7 @@ import { FormComponent } from './components/form/form.component';
 import { HeaderComponent } from './components/header/header.component';
 import { MainComponent } from './components/main/main.component';
 import { PolicyComponent } from './components/policy/policy.component';
-import { EmptyComponent } from './empty/empty.component';
+import { EmptyComponent } from './components/empty/empty.component';
 
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';

@@ -30,7 +30,9 @@ mat-error {
 .checkbox {
   display: inline-block;
   cursor: pointer;
-  margin-left: -1.6em;
+  margin-left: -1.4em;
+  margin-right: 0.6em;
+  margin-bottom: -0.2em;
   width: 1em;
   height: 1em;
   background-color: #FFFFFF;
@@ -45,7 +47,7 @@ mat-error {
   background-repeat: no-repeat;
   background-position: center;
   background-size: 98%;
-  transition: .2s;
+  transition: .1s;
 }
 
 .btn-form {
