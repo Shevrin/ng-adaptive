@@ -1,0 +1,12 @@
+<div class="alert__container">
+  <div class="alert-text">
+    <h2>Cookie consent</h2>
+    This website uses cookies. By continuing to browse, you are accepting its
+    use. If you want to know more, see our
+    <span class="check-policy" (click)="showDialog()">Privacy Policy</span>.
+  </div>
+  <div class="alert__btn">
+    <button mat-flat-button class="btn-reject"(click)="alertRef.dismiss()">REJECT</button>
+    <button mat-flat-button class="btn-accent"(click)="alertRef.dismiss()">ACCENT</button>
+  </div>
+</div>

@@ -1,8 +1,22 @@
+.dialog {
+  width: 60rem;
+  box-sizing: border-box;
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+h2 {
+  font-family: 'Jost', sans-serif;
+  font-size: 1.8rem;
+  font-weight: 600;
+}
+
 button {
   cursor: pointer;
-  width: 70px;
-  height: 36px;
-  font-size: 12px;
+  margin: 0 auto;
+  padding: 0.5rem 1rem;
+
+  font-size: 1rem;
   border-radius: 4px;
   color: #7338F6;
   background-color: #FFFFFF;

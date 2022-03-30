@@ -1,10 +1,14 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { AppRoutingModule } from './app-routing.module';
 
 import { AppComponent } from './app.component';
-import { HeaderComponent } from './header/header.component';
-import { MainComponent } from './main/main.component';
-import { FormComponent } from './form/form.component';
+import { AlertComponent } from './components/alert/alert.component';
+import { FormComponent } from './components/form/form.component';
+import { HeaderComponent } from './components/header/header.component';
+import { MainComponent } from './components/main/main.component';
+import { PolicyComponent } from './components/policy/policy.component';
+import { EmptyComponent } from './empty/empty.component';
 
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
@@ -15,8 +19,6 @@ import { MatSnackBarModule } from '@angular/material/snack-bar';
 
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
-import { PolicityComponent } from './policity/policity.component';
-import { AlertComponent } from './alert/alert.component';
 
 @NgModule({
   declarations: [
@@ -24,11 +26,13 @@ import { AlertComponent } from './alert/alert.component';
     HeaderComponent,
     MainComponent,
     FormComponent,
-    PolicityComponent,
+    PolicyComponent,
     AlertComponent,
+    EmptyComponent,
   ],
   imports: [
     BrowserModule,
+    AppRoutingModule,
     MatFormFieldModule,
     FormsModule,
     ReactiveFormsModule,

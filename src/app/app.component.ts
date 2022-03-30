@@ -1,35 +1,15 @@
-import { Component, ViewEncapsulation } from '@angular/core';
-import {
-  MatSnackBarHorizontalPosition,
-  MatSnackBarVerticalPosition,
-  MatSnackBar,
-} from '@angular/material/snack-bar';
-import { AlertComponent } from './alert/alert.component';
+import { Component, OnInit, ViewEncapsulation } from '@angular/core';
+import { NotifierService } from './services/notifier.service';
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss'],
   encapsulation: ViewEncapsulation.None,
 })
-export class AppComponent {
-  title = 'ng-viewgin';
+export class AppComponent implements OnInit {
+  constructor(private notifier: NotifierService) {}
 
-  // durationInSeconds = 3;
-  horizontalPosition: MatSnackBarHorizontalPosition = 'end';
-  verticalPosition: MatSnackBarVerticalPosition = 'bottom';
-
-  constructor(private _alertBar: MatSnackBar) {
-    this.openAlertBar();
-  }
-
-  public openAlertBar() {
-    this._alertBar.openFromComponent(AlertComponent, {
-      // data: {
-      //   message: message,
-      // },
-      // duration: this.durationInSeconds * 1000,
-      horizontalPosition: 'end',
-      verticalPosition: 'bottom',
-    });
+  ngOnInit(): void {
+    this.notifier.openNotifier();
   }
 }
