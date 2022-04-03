@@ -14,4 +14,6 @@ export class NotifierService {
       verticalPosition: 'bottom',
     });
   }
+
+  ngOnInit() {}
 }

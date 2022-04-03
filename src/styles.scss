@@ -141,12 +141,15 @@ h2 {
 .mat-snack-bar-container {
   max-height: 170px !important;
   display: flex;
-  // padding: 0 !important;
+  margin: 0 2vw !important;
   max-width: 2132px !important;
-  min-width: 100% !important;
   min-height: auto !important;
   background-color: #FFFFFF;
   color: $fаontColorМain;
+  // простое скрытие окна с предупреждением куки
+  // @media (max-width: 768px) {
+  //   display: none !important;
+  // }
 }
 
 .check-policy {
