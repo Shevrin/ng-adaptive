@@ -1,14 +1,16 @@
 @import "/src/styles//mixins/adaptiv-font.scss";
 
-
 .alert__container {
   display: flex;
+  bottom: 1rem;
   flex-wrap: nowrap;
-  // width: 100%;
   justify-content: space-between;
   background-color: #FFFFFF;
+  padding: 2vw;
+  border-radius: 4px;
+  box-shadow: 0px 4px 22px 3px rgba(0, 0, 0, 0.2);
 
-  @media (max-width: 768px) {
+  @media (max-width: 860px) {
     flex-wrap: wrap;
   }
 }

@@ -1,8 +1,4 @@
-import { Component, Inject } from '@angular/core';
-import {
-  MatSnackBarRef,
-  MAT_SNACK_BAR_DATA,
-} from '@angular/material/snack-bar';
+import { Component } from '@angular/core';
 import { OpenDialogService } from 'src/app/services/open-dialog.service';
 import { CookiesService } from 'src/app/services/cookies.service';
 
@@ -13,8 +9,6 @@ import { CookiesService } from 'src/app/services/cookies.service';
 })
 export class AlertComponent {
   constructor(
-    @Inject(MAT_SNACK_BAR_DATA) public data: any,
-    public alertRef: MatSnackBarRef<AlertComponent>,
     private openDialog: OpenDialogService,
     private cookie: CookiesService
   ) {}
@@ -24,7 +18,6 @@ export class AlertComponent {
   }
 
   public accentCokie(): void {
-    this.alertRef.dismiss();
     this.cookie.setItem();
   }
 }
