@@ -8,7 +8,6 @@ export class LoginService {
   constructor(private router: Router) {}
 
   public login(email: string): void {
-    console.log(`Login with ${email}`);
     this.router.navigate(['/empty']);
   }
 }

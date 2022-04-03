@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { OpenDialogService } from 'src/app/services/open-dialog.service';
 import { CookiesService } from 'src/app/services/cookies.service';
+import { NotifierService } from 'src/app/services/notifier.service';
 
 @Component({
   selector: 'app-alert',
@@ -10,6 +11,7 @@ import { CookiesService } from 'src/app/services/cookies.service';
 export class AlertComponent {
   constructor(
     private openDialog: OpenDialogService,
+    private seviceShowModal: NotifierService,
     private cookie: CookiesService
   ) {}
 
@@ -19,5 +21,10 @@ export class AlertComponent {
 
   public accentCokie(): void {
     this.cookie.setItem();
+    this.seviceShowModal.closeNotifier();
+  }
+
+  public reject(): void {
+    this.seviceShowModal.closeNotifier();
   }
 }
